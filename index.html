@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Indemnización - Guatemala</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo de Indemnización en Guatemala</h1>
+        <form id="indemnizacionForm">
+            <h2>Datos Personales</h2>
+
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="dpi">Número de DPI:</label>
+            <input type="text" id="dpi" name="dpi" required>
+
+            <label for="cargo">Cargo en la empresa:</label>
+            <input type="text" id="cargo" name="cargo" required>
+
+            <h2>Datos para Cálculo</h2>
+
+            <label for="salario">Salario base mensual (Q):</label>
+            <input type="number" id="salario" name="salario" step="0.01" required>
+
+            <label for="anios">Años de servicio:</label>
+            <input type="number" id="anios" name="anios" step="1" required>
+
+            <label for="meses">Meses adicionales:</label>
+            <input type="number" id="meses" name="meses" step="1" required>
+
+            <label for="tipoDespido">Tipo de despido:</label>
+            <select id="tipoDespido" name="tipoDespido" required>
+                <option value="injustificado">Injustificado</option>
+                <option value="justificado">Justificado</option>
+            </select>
+
+            <button type="submit">Calcular Indemnización</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
